@@ -1,9 +1,9 @@
 import React from 'react';
-import '@styles/CreateAccount.scss';
+import styles from '@styles/CreateAccount.module.scss';
 
 const CreateAccount = () => {
 	return (
-		<div className="CreateAccount">
+		<div className={styles.CreateAccount}>
 			<div className="CreateAccount-container">
 				<h1 className="title">My account</h1>
 				<form action="/" className="form">

@@ -1,11 +1,11 @@
 import React from 'react';
-import '@styles/SendEmail.scss';
 import logo from '@logos/logo_yard_sale.svg';
 import email from '@icons/email.svg';
+import styles from '@styles/SendEmail.module.scss';
 
 const SendEmail = () => {
 	return (
-		<div className="SendEmail">
+		<div className={styles.SendEmail}>
 			<div className="form-container">
 				<img src={logo} alt="logo" className="logo" />
 				<h1 className="title">Email has been sent!</h1>

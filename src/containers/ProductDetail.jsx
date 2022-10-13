@@ -1,11 +1,11 @@
 import React from 'react';
 import ProductInfo from '@components/ProductInfo';
-import '@styles/ProductDetail.scss';
 import close from '@icons/icon_close.png'
+import styles from '@styles/ProductDetail.module.scss';
 
 const ProductDetail = () => {
 	return (
-		<aside className="ProductDetail">
+		<aside className={styles.ProductDetail}>
 			<div className="ProductDetail-close">
 				<img src={close} alt="close" />
 			</div>
