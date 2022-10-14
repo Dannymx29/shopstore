@@ -1,4 +1,5 @@
 import React from 'react';
+import Image from 'next/image';
 import addToCart from '@icons/bt_add_to_cart.svg';
 import styles from '@styles/ProductInfo.module.scss';
 
@@ -8,7 +9,7 @@ const ProductInfo = () => {
 
 		<>
 
-			<img src="https://images.pexels.com/photos/276517/pexels-photo-276517.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="bike" />
+			<Image src="https://images.pexels.com/photos/276517/pexels-photo-276517.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="bike" />
 
 			<div className={styles.ProductInfo}>
 
@@ -32,7 +33,7 @@ const ProductInfo = () => {
 
 				<button className={` ${styles['primary-button']}, ${styles['add-to-cart-button']} `}>
 
-					<img src={addToCart} alt="add to cart" />
+					<Image src={addToCart} alt="add to cart" />
 
 					Add to cart
 

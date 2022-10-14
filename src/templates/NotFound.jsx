@@ -1,4 +1,5 @@
 import React from 'react';
+import Image from 'next/image';
 import styles from '@styles/NotFound.module.scss';
 
 const NotFound = () => {
@@ -14,7 +15,7 @@ const NotFound = () => {
 
             <div>
 
-                <img href="https://thumbs.dreamstime.com/b/404-error-page-not-found-design-29506876.jpg" alt="404" />
+                <Image href="https://thumbs.dreamstime.com/b/404-error-page-not-found-design-29506876.jpg" alt="404" />
 
             </div>
 

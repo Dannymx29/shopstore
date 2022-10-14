@@ -1,4 +1,5 @@
 import React, { useContext } from 'react';
+import Image from 'next/image';
 import OrderItem from '@components/OrderItem';
 import AppContext from '@context/AppContext';
 import arrow from '@icons/flechita.svg';
@@ -26,7 +27,7 @@ const MyOrder = () => {
 
 				<div className={styles["title-container"]}>
 
-					<img className={styles["more-clickable-area pointer"]} src={arrow} alt="arrow" onClick={() => toggleOrder()} />
+					<Image className={styles["more-clickable-area pointer"]} src={arrow} alt="arrow" onClick={() => toggleOrder()} />
 					
 					<p className={styles.title}>
 						

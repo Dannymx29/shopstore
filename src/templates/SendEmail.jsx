@@ -1,4 +1,5 @@
 import React from 'react';
+import Image from 'next/image';
 import logo from '@logos/logo_yard_sale.svg';
 import email from '@icons/email.svg';
 import styles from '@styles/SendEmail.module.scss';
@@ -11,7 +12,7 @@ const SendEmail = () => {
 			
 			<div className={styles["form-container"]}>
 
-				<img className={styles.logo} src={logo} alt="logo" />
+				<Image className={styles.logo} src={logo} alt="logo" />
 
 				<h1 className={styles.title}>
 
@@ -27,7 +28,7 @@ const SendEmail = () => {
 
 				<div className={styles["email-image"]}>
 
-					<img src={email} alt="email" />
+					<Image src={email} alt="email" />
 
 				</div>
 

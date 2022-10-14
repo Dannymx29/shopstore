@@ -1,4 +1,5 @@
 import React, { useRef } from 'react';
+import Image from 'next/image';
 import logo from '@logos/logo_yard_sale.svg';
 import styles from '@styles/Login.module.scss';
 
@@ -30,7 +31,7 @@ const Login = () => {
 
 			<div className={styles["Login-container"]}>
 
-				<img className={styles.logo} src={logo} alt="logo" />
+				<Image className={styles.logo} src={logo} alt="logo" />
 
 				<form className={styles.form} action="/" ref={form}>
 

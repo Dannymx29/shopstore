@@ -1,4 +1,5 @@
 import React from 'react';
+import Image from 'next/image';
 import logo from '@logos/logo_yard_sale.svg';
 import styles from '@styles/PasswordRecovery.module.scss';
 
@@ -10,7 +11,7 @@ const PasswordRecovery = () => {
 
 			<div className={styles["PasswordRecovery-container"]}>
 
-				<img className={styles.logo} src={logo} alt="logo" />
+				<Image className={styles.logo} src={logo} alt="logo" />
 
 				<h1 className={styles.title}>
 					

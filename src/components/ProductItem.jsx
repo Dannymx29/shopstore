@@ -1,4 +1,5 @@
 import React, { useContext } from 'react';
+import Image from 'next/image';
 import AppContext from '@context/AppContext';
 import addToCartImage from '@icons/bt_add_to_cart.svg';
 import addedToCartImage from '@icons/bt_added_to_cart.svg';
@@ -20,7 +21,7 @@ const ProductItem = ({ product }) => {
 
 		<div className={styles.ProductItem}>
 
-			<img src={product.images[0]} alt={product.title} />
+			<Image src={product.images[0]} alt={product.title} />
 
 			<div className={styles['product-info']}>
 
@@ -45,9 +46,9 @@ const ProductItem = ({ product }) => {
 					{  
 						state.cart.includes(product)
 
-						? <img className={` ${styles["disabled"]}, ${styles[" add-to-cart-btn"]} `} src={addedToCartImage} alt="added to cart" />
+						? <Image className={` ${styles["disabled"]}, ${styles[" add-to-cart-btn"]} `} src={addedToCartImage} alt="added to cart" />
 						
-						: <img className={` ${styles["add-to-cart-btn"]}, ${styles[" pointer"]} `} src={addToCartImage} alt="add to cart" /> 
+						: <Image className={` ${styles["add-to-cart-btn"]}, ${styles[" pointer"]} `} src={addToCartImage} alt="add to cart" /> 
 						
 					}
 					
