@@ -12,7 +12,7 @@ const ProductList = () => {
 
 	return (
 
-		<section className="main-container">
+		<section className={styles['main-container']}>
 
 			<div className={styles.ProductList}>
 

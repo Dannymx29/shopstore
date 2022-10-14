@@ -21,7 +21,7 @@ const ProductItem = ({ product }) => {
 
 		<div className={styles.ProductItem}>
 
-			<Image src={product.images[0]} alt={product.title} />
+			<Image src={product.images[0]} alt={product.title} loader={() => product.images[0]} width={100} height={100} layout="responsive" />
 
 			<div className={styles['product-info']}>
 
@@ -46,9 +46,9 @@ const ProductItem = ({ product }) => {
 					{  
 						state.cart.includes(product)
 
-						? <Image className={` ${styles["disabled"]}, ${styles[" add-to-cart-btn"]} `} src={addedToCartImage} alt="added to cart" />
+						? <Image className={` ${styles.disabled}, ${styles['add-to-cart-btn']} `} src={addedToCartImage} alt="added to cart" />
 						
-						: <Image className={` ${styles["add-to-cart-btn"]}, ${styles[" pointer"]} `} src={addToCartImage} alt="add to cart" /> 
+						: <Image className={` ${styles['add-to-cart-btn']}, ${styles.pointer} `} src={addToCartImage} alt="add to cart" /> 
 						
 					}
 					

@@ -1,5 +1,6 @@
 import '@styles/globals.css';
 import AppContext from '@context/AppContext';
+import Header from "@components/Header";
 import useInitialState from '@hooks/useInitialState';
 
 function MyApp({ Component, pageProps }) {
@@ -9,6 +10,8 @@ function MyApp({ Component, pageProps }) {
   return (
 
     <AppContext.Provider value={initialState}>
+
+      <Header />
 
       <Component {...pageProps} />
 
