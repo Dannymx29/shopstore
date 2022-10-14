@@ -8,54 +8,132 @@ import shoppingCart from '@icons/icon_shopping_cart.svg';
 import styles from '@styles/Header.module.scss';
 
 const Header = () => {
+
 	const { state, toggleOrder, toggleMenu } = useContext(AppContext);
 
 	return (
+
 		<>
+
 			<nav className={styles.Nav}>
-				<img src={menu} alt="menu" className="menu" />
-				<div className="navbar-left">
-					<img src={logo} alt="logo" className="nav-logo" />
+
+				<img className={styles.menu} src={menu} alt="menu"/>
+
+				<div className={styles['navbar-left']}>
+
+					<img className={styles['nav-logo']} src={logo} alt="logo"/>
+
 					<ul>
+
 						<li>
-							<a href="/">All</a>
+
+							<a href="/">
+								
+								All
+							
+							</a>
+
 						</li>
+
 						<li>
-							<a href="/">Clothes</a>
+
+							<a href="/">
+								
+								Clothes
+							
+							</a>
+
 						</li>
+
 						<li>
-							<a href="/">Electronics</a>
+
+							<a href="/">
+								
+								Electronics
+							
+							</a>
+
 						</li>
+
 						<li>
-							<a href="/">Furnitures</a>
+
+							<a href="/">
+								
+								Furnitures
+							
+							</a>
+
 						</li>
+
 						<li>
-							<a href="/">Toys</a>
+
+							<a href="/">
+								
+								Toys
+							
+							</a>
+
 						</li>
+						
 						<li>
-							<a href="/">Others</a>
+
+							<a href="/">
+								
+								Others
+							
+							</a>
+
 						</li>
+
 					</ul>
+
 				</div>
-				<div className="navbar-right">
+
+				<div className={styles['navbar-right']}>
+
 					<ul>
-						<li className="more-clickable-area navbar-email pointer" onClick={() => toggleMenu()}>
+
+						<li className={`${styles["more-clickable-area"]} ${styles["navbar-email"]} ${styles.pointer}`} onClick={() => toggleMenu()} >
+
 							platzi@example.com
+
 						</li>
-						<li
-							className="navbar-shopping-cart"
-							onClick={() => toggleOrder()}
-						>
-							<img className="more-clickable-area pointer" src={shoppingCart} alt="shopping cart" />
-							{state.cart.length > 0 ? <div>{state.cart.length}</div> : null}
+
+						<li onClick={() => toggleOrder()} >
+
+							<img className={ `${styles['more-clickable-area']}, ${styles.pointer}` } src={shoppingCart}  alt="shopping cart" />
+
+
+							{
+							
+								state.cart.length > 0
+
+								? 	<div>
+									
+										{state.cart.length}
+								
+									</div>
+
+								: null
+								
+							}
+
 						</li>
+
 					</ul>
+
 				</div>
+
 				{state.menuIsOpen && <Menu />}
+
 			</nav>
+
 			{state.orderIsOpen && <MyOrder />}
+
 		</>
+
 	);
+
 }
 
 export default Header;
