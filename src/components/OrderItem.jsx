@@ -20,7 +20,7 @@ const OrderItem = ({ product }) => {
 
 			<figure>
 
-				<Image src={product?.images[0]} alt={product?.title} />
+				<Image loader={() => product?.images[0]} src={product?.images[0]} alt={product?.title}  width={75} height={75} />
 
 			</figure>
 
