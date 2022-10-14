@@ -20,19 +20,19 @@ const OrderItem = ({ product }) => {
 
 			<figure>
 
-				<Image src={product.images[0]} alt={product.title} />
+				<Image src={product?.images[0]} alt={product?.title} />
 
 			</figure>
 
 			<p>
 				
-				{product.title}
+				{product?.title}
 			
 			</p>
 
 			<p>
 				
-				${product.price}
+				${product?.price}
 				
 			</p>
 
