@@ -12,7 +12,7 @@ const OrderItem = ({ product }) => {
 
 		removeFromCart(product);
 
-	}
+	};
 
 	return (
 
@@ -42,6 +42,6 @@ const OrderItem = ({ product }) => {
 
 	);
 
-}
+};
 
 export default OrderItem;

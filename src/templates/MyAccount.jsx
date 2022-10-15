@@ -19,41 +19,29 @@ const MyAccount = () => {
 
 					<div>
 
-						<label className={styles.label} for="name">
+						<label className={styles.label} for="name" htmlFor='MA-name'>
 							
 							Name
 						
 						</label>
 
-						<p className={styles.value}>
-							
-							Camila Yokoo
-						
-						</p>
+						<p id='MA-name' className={styles.value} placeholder='Ejemplo: Camila Yokoo' ></p>
 
-						<label className={styles.label} for="email">
+						<label className={styles.label} for="email" htmlFor='MA-email'>
 							
 							Email
 						
 						</label>
 
-						<p className={styles.value}>
-							
-							amilayokoo@gmail.com
-						
-						</p>
+						<p id='MA-email' className={styles.value} placeholder='Ejemplo: amilayokoo@gmail.com' ></p>
 
-						<label className={styles.label} for="password">
+						<label className={styles.label} for="password" htmlFor='MA-password'>
 							
 							Password
 						
 						</label>
 
-						<p className={styles.value}>
-							
-							*********
-						
-						</p>
+						<p id='MA-password' className={styles.value} placeholder='*********' ></p>
 
 					</div>
 
@@ -67,6 +55,6 @@ const MyAccount = () => {
 
 	);
 
-}
+};
 
 export default MyAccount;

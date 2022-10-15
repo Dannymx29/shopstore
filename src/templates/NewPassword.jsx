@@ -1,4 +1,5 @@
 import React from 'react';
+import Image from 'next/image';
 import logo from '@logos/logo_yard_sale.svg';
 import styles from '@styles/NewPassword.module.scss';
 
@@ -10,7 +11,7 @@ const NewPassword = () => {
 			
 			<div className={styles["NewPassword-container"]}>
 
-				<img className={styles.logo} src={logo} alt="logo" />
+				<Image className={styles.logo} src={logo} alt="logo" />
 
 				<h1 className={styles.title}>
 					
@@ -26,7 +27,7 @@ const NewPassword = () => {
 
 				<form className={styles.form} action="/">
 					
-					<label className={styles.label} for="password">
+					<label className={styles.label} for="password" htmlFor='password'>
 						
 						Password
 					
@@ -34,7 +35,7 @@ const NewPassword = () => {
 					
 					<input id="password" className={` ${styles["input"]}, ${styles["input-password"]} `} type="password" placeholder="*********" />
 					
-					<label className={styles.label}  for="new-password">
+					<label className={styles.label}  for="new-password" htmlFor='new-password'>
 						
 						New Password
 					
@@ -52,6 +53,6 @@ const NewPassword = () => {
 	
 	);
 
-}
+};
 
 export default NewPassword;

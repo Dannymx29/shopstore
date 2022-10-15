@@ -19,7 +19,7 @@ const CreateAccount = () => {
 
 					<div>
 
-						<label className={styles.label} for="name">
+						<label className={styles.label} htmlFor='name'>
 							
 							Name
 						
@@ -27,7 +27,7 @@ const CreateAccount = () => {
 
 						<input id="name" className={` ${styles["input"]}, ${styles["input-name"]} `} type="text" placeholder="Teff" />
 						
-						<label className={styles.label} for="email">
+						<label className={styles.label} htmlFor='email'>
 							
 							Email
 						
@@ -35,7 +35,7 @@ const CreateAccount = () => {
 						
 						<input id="email" className={` ${styles["input"]}, ${styles["input-email"]} `} type="text" placeholder="platzi@example.com" />
 						
-						<label className={styles.label} for="password">
+						<label className={styles.label} htmlFor="password">
 							
 							Password
 						
@@ -55,6 +55,6 @@ const CreateAccount = () => {
 
 	);
 
-}
+};
 
 export default CreateAccount;

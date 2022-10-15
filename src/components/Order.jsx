@@ -1,6 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
-import flechita from '@icons/flechita.svg'
+import flechita from '@icons/flechita.svg';
 import styles from '@styles/Order.module.scss';
 
 const Order = () => {
@@ -37,6 +37,6 @@ const Order = () => {
 
 	);
 
-}
+};
 
 export default Order;

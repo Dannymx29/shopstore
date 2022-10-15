@@ -18,7 +18,7 @@ const MyOrder = () => {
 
 		return sum;
 
-	}
+	};
 
 	return (
 
@@ -91,6 +91,6 @@ const MyOrder = () => {
 
 	);
 
-}
+};
 
 export default MyOrder;

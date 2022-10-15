@@ -1,4 +1,5 @@
 import React, { useRef } from 'react';
+import Link from 'next/link';
 import Image from 'next/image';
 import logo from '@logos/logo_yard_sale.svg';
 import styles from '@styles/Login.module.scss';
@@ -19,11 +20,11 @@ const Login = () => {
 
 			password: formData.get('password')
 
-		}
+		};
 
 		console.log(data);
 
-	}
+	};
 
 	return (
 
@@ -57,11 +58,11 @@ const Login = () => {
 
 					</button>
 
-					<a href="/">
+					<Link href="/">
 						
 						Forgot my password
 					
-					</a>
+					</Link>
 
 				</form>
 
@@ -77,6 +78,6 @@ const Login = () => {
 
 	);
 
-}
+};
 
 export default Login;

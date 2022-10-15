@@ -33,61 +33,61 @@ const Header = () => {
 
 						<li>
 
-							<a href="/">
+							<Link href="/">
 								
 								All
 							
-							</a>
+							</Link>
 
 						</li>
 
 						<li>
 
-							<a href="/">
+							<Link href="/">
 								
 								Clothes
 							
-							</a>
+							</Link>
 
 						</li>
 
 						<li>
 
-							<a href="/">
+							<Link href="/">
 								
 								Electronics
 							
-							</a>
+							</Link>
 
 						</li>
 
 						<li>
 
-							<a href="/">
+							<Link href="/">
 								
 								Furnitures
 							
-							</a>
+							</Link>
 
 						</li>
 
 						<li>
 
-							<a href="/">
+							<Link href="/">
 								
 								Toys
 							
-							</a>
+							</Link>
 
 						</li>
 						
 						<li>
 
-							<a href="/">
+							<Link href="/">
 								
 								Others
 							
-							</a>
+							</Link>
 
 						</li>
 
@@ -140,6 +140,6 @@ const Header = () => {
 
 	);
 
-}
+};
 
 export default Header;

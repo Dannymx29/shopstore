@@ -12,7 +12,7 @@ const Orders = () => {
 
 				<h1 className={styles.title}>
 					
-					My orders
+					My orders.
 					
 				</h1>
 
@@ -28,6 +28,6 @@ const Orders = () => {
 
 	);
 
-}
+};
 
 export default Orders;

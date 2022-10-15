@@ -13,9 +13,9 @@ const ProductItem = ({ product }) => {
 
 		console.log('in cart: ', state.cart.includes(item));
 
-		addToCart(item)
+		addToCart(item);
 
-	}
+	};
 
 	return (
 
@@ -60,6 +60,6 @@ const ProductItem = ({ product }) => {
 
 	);
 
-}
+};
 
 export default ProductItem;

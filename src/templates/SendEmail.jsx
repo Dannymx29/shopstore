@@ -1,4 +1,5 @@
 import React from 'react';
+import Link from 'next/link';
 import Image from 'next/image';
 import logo from '@logos/logo_yard_sale.svg';
 import email from '@icons/email.svg';
@@ -42,15 +43,15 @@ const SendEmail = () => {
 
 					<span>
 						
-						Didn't receive the email?
+						Didn&#39t receive the email?
 						
 					</span>
 
-					<a href="/">
+					<Link href="/">
 						
 						Resend
 						
-					</a>
+					</Link>
 
 				</p>
 
@@ -60,6 +61,6 @@ const SendEmail = () => {
 
 	);
 
-}
+};
 
 export default SendEmail;

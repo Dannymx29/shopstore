@@ -21,7 +21,7 @@ const NotFound = () => {
 
             <h4>
                 
-                We can't fint the page you're looking for.
+                We can&#39t fint the page you&#39re looking for.
                 
             </h4>
 
@@ -35,6 +35,6 @@ const NotFound = () => {
 
 	);
 
-}
+};
 
 export default NotFound;
