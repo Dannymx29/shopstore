@@ -1,89 +1,49 @@
-import { useState } from "react";
+import { useState } from 'react';
 
 const initialState = {
-
   cart: [],
 
   orderIsOpen: false,
 
   menuIsOpen: false,
-
 };
 
 const useInitialState = () => {
-
   const [state, setState] = useState(initialState);
 
   const addToCart = (payload) => {
+    setState({
+      ...state,
 
-    setState(
-      
-      {
-
-        ...state,
-
-        cart: state.cart.includes(payload)
-
-          ? state.cart
-
-          : [...state.cart, payload],
-
-      }
-
-    );
-
+      cart: state.cart.includes(payload) ? state.cart : [...state.cart, payload],
+    });
   };
 
   const removeFromCart = (payload) => {
+    setState({
+      ...state,
 
-    setState(
-
-      {
-
-        ...state,
-
-        cart: state.cart.filter((items) => items.id !== payload.id),
-
-      }
-
-    );
-
+      cart: state.cart.filter((items) => items.id !== payload.id),
+    });
   };
 
   const toggleOrder = () => {
+    setState({
+      ...state,
 
-    setState(
-
-      {
-
-        ...state,
-
-        orderIsOpen: !state.orderIsOpen,
-
-      }
-
-    );
-
+      orderIsOpen: !state.orderIsOpen,
+    });
   };
 
   const toggleMenu = () => {
+    setState({
+      ...state,
 
-    setState(
-      
-      {
-
-        ...state,
-
-        menuIsOpen: !state.menuIsOpen,
-
-      }
-
-    );
-
+      menuIsOpen: !state.menuIsOpen,
+    });
   };
 
   return {
-
     state,
 
     addToCart,
@@ -93,9 +53,7 @@ const useInitialState = () => {
     toggleOrder,
 
     toggleMenu,
-
   };
-  
 };
 
 export default useInitialState;
