@@ -19,7 +19,7 @@ const Header = () => {
 
 			<nav className={styles.Nav}>
 
-				<Image className={styles.menu} src={menu} alt="menu"/>
+				<img className={styles.menu} src={menu.src} alt="menu"/>
 
 				<div className={styles['navbar-left']}>
 
@@ -99,13 +99,13 @@ const Header = () => {
 
 					<ul>
 
-						<li className={`${styles["more-clickable-area"]} ${styles["navbar-email"]} ${styles.pointer}`} onClick={() => toggleMenu()} >
+						<li className={`${styles["more-clickable-area"]} ${styles["navbar-email"]} ${styles.pointer}`} onClick={() => toggleMenu()} aria-hidden="true">
 
 							platzi@example.com
 
 						</li>
 
-						<li onClick={() => toggleOrder()} >
+						<li className={styles['navbar-shopping-cart']} onClick={() => toggleOrder()} aria-hidden="true">
 
 							<Image className={ `${styles['more-clickable-area']}, ${styles.pointer}` } src={shoppingCart}  alt="shopping cart" />
 

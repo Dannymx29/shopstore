@@ -34,6 +34,11 @@
     height: 60px;
   }
 
+.navbar-right ul:first-of-type
+  {
+    margin: 0, 1em, 0, 0;
+  } 
+
 .navbar-left 
   {
     display: flex;

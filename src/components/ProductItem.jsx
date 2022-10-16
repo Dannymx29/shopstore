@@ -41,7 +41,7 @@ const ProductItem = ({ product }) => {
 
 				</div>
 
-				<figure className={styles['more-clickable-area']} onClick={() => handleClick(product)} >
+				<figure className={styles['more-clickable-area']} onClick={() => handleClick(product)} aria-hidden="true">
 
 					{  
 						state.cart.includes(product)
