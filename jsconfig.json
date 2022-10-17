@@ -9,10 +9,10 @@
             "@context/*": ["context/*"],
             "@hooks/*": ["hooks/*"],
             "@pages/*": ["pages/*"],
-            "@public/*": ["public/*"],
+            "@public/*": ["../public/*"],
             "@routs/*": ["routs/*"],
             "@styles/*": ["styles/*"],
             "@templates/*": ["templates/*"],
         }
-    }
+    },
 }
